@@ -31,14 +31,14 @@
 
 ### Projects
 
-- [ ] **PROJ-01**: Visitor can browse a card grid showing DJ's projects with title, description, and links
+- [x] **PROJ-01**: Visitor can browse a card grid showing DJ's projects with title, description, and links
 - [ ] **PROJ-02**: Visitor can navigate to a full case study page for each featured project showing problem, process, and outcome
-- [ ] **PROJ-03**: Each project card displays tech stack tags showing what technologies were used
-- [ ] **PROJ-04**: Each project card has links to the live site and/or GitHub source code
+- [x] **PROJ-03**: Each project card displays tech stack tags showing what technologies were used
+- [x] **PROJ-04**: Each project card has links to the live site and/or GitHub source code
 
 ### Resume
 
-- [ ] **RESUME-01**: Visitor can download DJ's resume as a PDF via a clearly labeled download button
+- [x] **RESUME-01**: Visitor can download DJ's resume as a PDF via a clearly labeled download button
 
 ### Contact
 
@@ -97,10 +97,10 @@
 | HERO-02 | Phase 2 | Pending |
 | ABOUT-01 | Phase 2 | Pending |
 | ABOUT-02 | Phase 2 | Pending |
-| PROJ-01 | Phase 2 | Pending |
-| PROJ-03 | Phase 2 | Pending |
-| PROJ-04 | Phase 2 | Pending |
-| RESUME-01 | Phase 2 | Pending |
+| PROJ-01 | Phase 2 | Complete |
+| PROJ-03 | Phase 2 | Complete |
+| PROJ-04 | Phase 2 | Complete |
+| RESUME-01 | Phase 2 | Complete |
 | CONTACT-01 | Phase 3 | Pending |
 | CONTACT-02 | Phase 3 | Pending |
 | CONTACT-03 | Phase 3 | Pending |
