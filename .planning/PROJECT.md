@@ -12,7 +12,8 @@ A visitor should leave knowing exactly who DJ is, be impressed by his work, and 
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Content placeholder system — placeholders everywhere so real content can be dropped in later *(Validated in Phase 1: Foundation)*
+- [x] Deployed to Vercel with custom domain support *(Validated in Phase 1: Foundation — live at https://portfolio-alpha-eight-40.vercel.app/)*
 
 ### Active
 
@@ -21,10 +22,8 @@ A visitor should leave knowing exactly who DJ is, be impressed by his work, and 
 - [ ] Projects showcase — featured projects with full case study pages + card grid for remaining projects
 - [ ] Resume — downloadable PDF and/or inline display
 - [ ] Contact section — links and/or form for reaching out
-- [ ] Deployed to Vercel with custom domain support
 - [ ] Responsive design — looks great on mobile and desktop
 - [ ] Warm & personal visual design — approachable, human, personality-forward
-- [ ] Content placeholder system — placeholders everywhere so real content can be dropped in later
 
 ### Out of Scope
 
@@ -77,4 +76,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-27 after initialization*
+*Last updated: 2026-03-28 after Phase 1: Foundation complete*
