@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Every future section has a placeholder stub — the home page renders without errors even before real content exists
 **Plans:** 2 plans
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Next.js 15, configure Tailwind v4, shadcn/ui, fonts, Prettier
+- [x] 01-01-PLAN.md — Scaffold Next.js 15, configure Tailwind v4, shadcn/ui, fonts, Prettier
 - [ ] 01-02-PLAN.md — Create lib/projects.ts data layer, section stubs, wire home page, deploy to Vercel
 
 ### Phase 2: Home Page
