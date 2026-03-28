@@ -1,5 +1,5 @@
 import { allProjects, type Project } from '@/lib/projects'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, GitBranch } from 'lucide-react'
 
 function ProjectCard({ project }: { project: Project }) {
   return (
@@ -55,7 +55,7 @@ function ProjectCard({ project }: { project: Project }) {
               aria-label={`View ${project.title} on GitHub`}
               className="text-muted-foreground transition-colors hover:text-primary"
             >
-              <Github className="h-4 w-4" />
+              <GitBranch className="h-4 w-4" />
             </a>
           )}
         </div>
