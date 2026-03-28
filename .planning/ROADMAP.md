@@ -60,7 +60,10 @@ Plans:
   2. DJ receives the submission as an email via Resend (verified with a real test submission from a mobile device)
   3. Visitor can find DJ's email address and social profile links (GitHub, LinkedIn) without submitting the form
   4. A bot submitting the honeypot field does not trigger an email send
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 03-01-PLAN.md — Install deps (RHF, Zod, Resend), add shadcn/ui form primitives, create Zod schema and Server Action
+- [ ] 03-02-PLAN.md — Build ContactForm client component, replace Contact section stub with two-column layout + social links
 **UI hint**: yes
 
 ### Phase 4: Case Studies
@@ -95,6 +98,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-28 |
 | 2. Home Page | 3/3 | Complete   | 2026-03-28 |
-| 3. Contact Form | 0/? | Not started | - |
+| 3. Contact Form | 0/2 | Not started | - |
 | 4. Case Studies | 0/? | Not started | - |
 | 5. Polish & Launch | 0/? | Not started | - |
