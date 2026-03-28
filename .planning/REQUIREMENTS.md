@@ -8,9 +8,9 @@
 ### Foundation
 
 - [x] **FOUND-01**: Project is scaffolded with Next.js 15 App Router, TypeScript, Tailwind v4, and shadcn/ui
-- [ ] **FOUND-02**: Vercel deploy pipeline is configured from day one with a working production URL
-- [ ] **FOUND-03**: All project data is centralized in a single `lib/projects.ts` file as the source of truth
-- [ ] **FOUND-04**: Every section uses realistic placeholder content that is easy to swap for real content later
+- [x] **FOUND-02**: Vercel deploy pipeline is configured from day one with a working production URL
+- [x] **FOUND-03**: All project data is centralized in a single `lib/projects.ts` file as the source of truth
+- [x] **FOUND-04**: Every section uses realistic placeholder content that is easy to swap for real content later
 
 ### Navigation
 
@@ -86,9 +86,9 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUND-01 | Phase 1 | Complete |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |

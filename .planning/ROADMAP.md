@@ -12,7 +12,7 @@ Five phases take this project from a blank repo to a launched, polished portfoli
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Next.js scaffold, Vercel deploy, lib/projects.ts, placeholder content system
+- [x] **Phase 1: Foundation** - Next.js scaffold, Vercel deploy, lib/projects.ts, placeholder content system (completed 2026-03-28)
 - [ ] **Phase 2: Home Page** - Navbar, footer, hero, about, projects grid, and resume download
 - [ ] **Phase 3: Contact Form** - Server Action, Resend integration, spam protection, and contact links
 - [ ] **Phase 4: Case Studies** - Full narrative case study pages for featured projects
@@ -29,10 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. lib/projects.ts exists with typed placeholder project data that any component can import
   3. app/layout.tsx has metadataBase set and fonts loaded with no FOUT
   4. Every future section has a placeholder stub — the home page renders without errors even before real content exists
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Next.js 15, configure Tailwind v4, shadcn/ui, fonts, Prettier
-- [ ] 01-02-PLAN.md — Create lib/projects.ts data layer, section stubs, wire home page, deploy to Vercel
+- [x] 01-02-PLAN.md — Create lib/projects.ts data layer, section stubs, wire home page, deploy to Vercel
 
 ### Phase 2: Home Page
 **Goal**: A visitor can see every main section of the portfolio on a single scrollable page with full navigation
@@ -89,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Planning complete | - |
+| 1. Foundation | 2/2 | Complete   | 2026-03-28 |
 | 2. Home Page | 0/? | Not started | - |
 | 3. Contact Form | 0/? | Not started | - |
 | 4. Case Studies | 0/? | Not started | - |

@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-03-28T07:48:47.435Z"
-last_activity: 2026-03-28 -- Phase 01 execution started
+stopped_at: "Checkpoint: Task 3 (Deploy to Vercel) — awaiting user GitHub push and Vercel connection"
+last_updated: "2026-03-28T07:58:16.540Z"
+last_activity: 2026-03-28
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
   percent: 50
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-03-27)
 ## Current Position
 
 Phase: 01 (foundation) — EXECUTING
-Plan: 1 of 2
-Status: Executing Phase 01
-Last activity: 2026-03-28 -- Phase 01 execution started
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-03-28
 
 Progress: [█████░░░░░] 50%
 
@@ -53,6 +53,7 @@ Progress: [█████░░░░░] 50%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 4 | 2 tasks | 15 files |
+| Phase 01 P02 | 6 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,9 @@ Recent decisions affecting current work:
 - [Phase 01-01]: Scaffolded to temp directory then rsync'd to worktree — create-next-app cannot run in non-empty directory
 - [Phase 01-01]: shadcn/ui CLI v4.1.1 incompatible with Node 20.4.0 (requires 20.5.0) — manually configured components.json and installed runtime deps
 - [Phase 01-01]: Tailwind v4 PostCSS config uses object syntax { '@tailwindcss/postcss': {} } not array format
+- [Phase 01-02]: Project data shape finalized upfront with all 11 fields — avoids migration cost when Phase 4 adds case studies
+- [Phase 01-02]: components/sections/ pattern established — named exports, Server Components only, id attributes on every section
+- [Phase 01-02]: lib/ is the single source of truth for typed data — never hardcode project data in JSX
 
 ### Pending Todos
 
@@ -80,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-28T07:48:47.432Z
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-03-28T07:58:16.536Z
+Stopped at: Checkpoint: Task 3 (Deploy to Vercel) — awaiting user GitHub push and Vercel connection
 Resume file: None
