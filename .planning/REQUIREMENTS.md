@@ -14,10 +14,10 @@
 
 ### Navigation
 
-- [ ] **NAV-01**: Visitor can see a top navbar with anchor links to all main sections
-- [ ] **NAV-02**: Clicking a navbar link smoothly scrolls to the corresponding section
-- [ ] **NAV-03**: Visitor on mobile can open and close a hamburger menu for navigation
-- [ ] **NAV-04**: Visitor can find social/contact links in a footer at the bottom of the page
+- [x] **NAV-01**: Visitor can see a top navbar with anchor links to all main sections
+- [x] **NAV-02**: Clicking a navbar link smoothly scrolls to the corresponding section
+- [x] **NAV-03**: Visitor on mobile can open and close a hamburger menu for navigation
+- [x] **NAV-04**: Visitor can find social/contact links in a footer at the bottom of the page
 
 ### Hero
 
@@ -89,10 +89,10 @@
 | FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
 | FOUND-04 | Phase 1 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | ABOUT-01 | Phase 2 | Pending |

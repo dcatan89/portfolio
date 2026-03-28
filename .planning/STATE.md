@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: verifying
-stopped_at: Phase 2 UI-SPEC approved
-last_updated: "2026-03-28T16:10:35.849Z"
+stopped_at: Completed 02-home-page-01-PLAN.md
+last_updated: "2026-03-28T16:40:00.044Z"
 last_activity: 2026-03-28
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 5
+  completed_plans: 3
   percent: 50
 ---
 
@@ -54,6 +54,7 @@ Progress: [█████░░░░░] 50%
 *Updated after each plan completion*
 | Phase 01 P01 | 4 | 2 tasks | 15 files |
 | Phase 01 P02 | 6 | 2 tasks | 7 files |
+| Phase 02-home-page P01 | 5 | 3 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,8 @@ Recent decisions affecting current work:
 - [Phase 01-02]: lib/ is the single source of truth for typed data — never hardcode project data in JSX
 - [Phase 01-02]: Vercel production URL is https://portfolio-alpha-eight-40.vercel.app/ — use as metadataBase in Phase 2
 - [Phase 01]: Vercel production URL is https://portfolio-alpha-eight-40.vercel.app/ — use as metadataBase in Phase 2
+- [Phase 02-home-page]: lucide-react v1.7.0 removed brand icons (Github, Linkedin) — used inline SVG paths for GitHub/LinkedIn logos in Footer
+- [Phase 02-home-page]: Server Component / Client Component split: Navbar is Server, NavbarMobile is Client (useState for open/close)
 
 ### Pending Todos
 
@@ -86,6 +89,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-28T16:10:35.845Z
-Stopped at: Phase 2 UI-SPEC approved
-Resume file: /Users/djcatan/portfolio/.planning/phases/02-home-page/02-UI-SPEC.md
+Last session: 2026-03-28T16:40:00.040Z
+Stopped at: Completed 02-home-page-01-PLAN.md
+Resume file: None
