@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-playfair-display);
+  --font-body: var(--font-inter);
+}
