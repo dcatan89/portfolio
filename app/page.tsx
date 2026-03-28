@@ -1,8 +1,17 @@
+import { Hero } from '@/components/sections/Hero'
+import { About } from '@/components/sections/About'
+import { Projects } from '@/components/sections/Projects'
+import { Resume } from '@/components/sections/Resume'
+import { Contact } from '@/components/sections/Contact'
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
-      <h1 className="font-display text-5xl font-bold">DJ Catan</h1>
-      <p className="mt-4 text-lg text-gray-600">Portfolio coming soon.</p>
+    <main>
+      <Hero />
+      <About />
+      <Projects />
+      <Resume />
+      <Contact />
     </main>
   )
 }
