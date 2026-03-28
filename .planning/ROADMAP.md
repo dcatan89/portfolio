@@ -44,7 +44,11 @@ Plans:
   3. Visitor can read an About section with bio and a styled photo placeholder slot
   4. Visitor can browse a project card grid showing titles, descriptions, tech stack tags, and live/GitHub links
   5. Visitor can download a resume PDF via a clearly labeled button
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 02-01-PLAN.md — Warm color palette, smooth scroll, Navbar with hamburger, Footer with social links
+- [ ] 02-02-PLAN.md — Hero section (name, CTA, availability badge, scroll chevron) and About section (photo placeholder, bio)
+- [ ] 02-03-PLAN.md — Projects card grid consuming lib/projects.ts and Resume download with placeholder PDF
 **UI hint**: yes
 
 ### Phase 3: Contact Form
@@ -90,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-28 |
-| 2. Home Page | 0/? | Not started | - |
+| 2. Home Page | 0/3 | Planned | - |
 | 3. Contact Form | 0/? | Not started | - |
 | 4. Case Studies | 0/? | Not started | - |
 | 5. Polish & Launch | 0/? | Not started | - |
