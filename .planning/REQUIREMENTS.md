@@ -21,13 +21,13 @@
 
 ### Hero
 
-- [ ] **HERO-01**: Visitor sees DJ's name, a tagline describing what he does, and a primary CTA button on first load
-- [ ] **HERO-02**: Visitor can see an availability badge near the CTA indicating DJ's openness to work or projects
+- [x] **HERO-01**: Visitor sees DJ's name, a tagline describing what he does, and a primary CTA button on first load
+- [x] **HERO-02**: Visitor can see an availability badge near the CTA indicating DJ's openness to work or projects
 
 ### About
 
-- [ ] **ABOUT-01**: Visitor can read an About section with DJ's bio, background, and personality
-- [ ] **ABOUT-02**: About section includes a photo placeholder slot sized and styled for a real headshot
+- [x] **ABOUT-01**: Visitor can read an About section with DJ's bio, background, and personality
+- [x] **ABOUT-02**: About section includes a photo placeholder slot sized and styled for a real headshot
 
 ### Projects
 
@@ -93,10 +93,10 @@
 | NAV-02 | Phase 2 | Complete |
 | NAV-03 | Phase 2 | Complete |
 | NAV-04 | Phase 2 | Complete |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| ABOUT-01 | Phase 2 | Pending |
-| ABOUT-02 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| ABOUT-01 | Phase 2 | Complete |
+| ABOUT-02 | Phase 2 | Complete |
 | PROJ-01 | Phase 2 | Complete |
 | PROJ-03 | Phase 2 | Complete |
 | PROJ-04 | Phase 2 | Complete |
