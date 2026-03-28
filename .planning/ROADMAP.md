@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. lib/projects.ts exists with typed placeholder project data that any component can import
   3. app/layout.tsx has metadataBase set and fonts loaded with no FOUT
   4. Every future section has a placeholder stub — the home page renders without errors even before real content exists
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Next.js 15, configure Tailwind v4, shadcn/ui, fonts, Prettier
+- [ ] 01-02-PLAN.md — Create lib/projects.ts data layer, section stubs, wire home page, deploy to Vercel
 
 ### Phase 2: Home Page
 **Goal**: A visitor can see every main section of the portfolio on a single scrollable page with full navigation
@@ -86,7 +89,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/2 | Planning complete | - |
 | 2. Home Page | 0/? | Not started | - |
 | 3. Contact Form | 0/? | Not started | - |
 | 4. Case Studies | 0/? | Not started | - |
