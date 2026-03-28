@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: "Checkpoint: Task 3 (Deploy to Vercel) — awaiting user GitHub push and Vercel connection"
-last_updated: "2026-03-28T07:58:16.540Z"
+status: verifying
+stopped_at: Completed 01-02-PLAN.md — Phase 01 Foundation complete
+last_updated: "2026-03-28T14:43:45.756Z"
 last_activity: 2026-03-28
 progress:
   total_phases: 5
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-03-27)
 
 Phase: 01 (foundation) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-03-28
 
 Progress: [█████░░░░░] 50%
@@ -72,6 +72,8 @@ Recent decisions affecting current work:
 - [Phase 01-02]: Project data shape finalized upfront with all 11 fields — avoids migration cost when Phase 4 adds case studies
 - [Phase 01-02]: components/sections/ pattern established — named exports, Server Components only, id attributes on every section
 - [Phase 01-02]: lib/ is the single source of truth for typed data — never hardcode project data in JSX
+- [Phase 01-02]: Vercel production URL is https://portfolio-alpha-eight-40.vercel.app/ — use as metadataBase in Phase 2
+- [Phase 01]: Vercel production URL is https://portfolio-alpha-eight-40.vercel.app/ — use as metadataBase in Phase 2
 
 ### Pending Todos
 
@@ -84,6 +86,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-28T07:58:16.536Z
-Stopped at: Checkpoint: Task 3 (Deploy to Vercel) — awaiting user GitHub push and Vercel connection
+Last session: 2026-03-28T14:43:45.751Z
+Stopped at: Completed 01-02-PLAN.md — Phase 01 Foundation complete
 Resume file: None

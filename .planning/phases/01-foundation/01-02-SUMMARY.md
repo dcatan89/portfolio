@@ -62,7 +62,7 @@ completed: 2026-03-28
 - **Duration:** ~6 min
 - **Started:** 2026-03-28T07:50:26Z
 - **Completed:** 2026-03-28T07:56:26Z
-- **Tasks:** 2 of 3 complete (Task 3 awaits user Vercel setup)
+- **Tasks:** 3 of 3 complete
 - **Files modified:** 7
 
 ## Accomplishments
@@ -78,7 +78,7 @@ Each task was committed atomically:
 
 1. **Task 1: Create lib/projects.ts data layer** - `c2b99f0` (feat)
 2. **Task 2: Create section stubs and wire home page** - `4a33aa9` (feat)
-3. **Task 3: Deploy to Vercel** - Awaiting user action (checkpoint)
+3. **Task 3: Deploy to Vercel** - Human verified — production URL: https://portfolio-alpha-eight-40.vercel.app/
 
 ## Files Created/Modified
 - `lib/projects.ts` - Typed Project interface, 3 placeholder projects, featuredProjects/allProjects exports
@@ -138,26 +138,21 @@ These stubs are intentional (placeholder-first per CONTEXT.md D-04). They do not
 ## Issues Encountered
 - Worktree had no node_modules — resolved by running npm install (Rule 3 auto-fix above)
 
-## User Setup Required
+## Vercel Deployment
 
-**External service requires manual configuration.** Vercel deployment requires:
+Production URL: **https://portfolio-alpha-eight-40.vercel.app/**
 
-1. Push code to GitHub:
-   - Create a GitHub repository for the portfolio
-   - `git remote add origin https://github.com/YOUR_USERNAME/portfolio.git`
-   - `git push -u origin main` (from the main portfolio directory)
-2. Connect to Vercel:
-   - Go to https://vercel.com/new
-   - Import the GitHub repository
-   - Accept default settings (Next.js auto-detected)
-   - Click Deploy
-3. Verify the live URL returns the working app with all 5 sections visible
+Human-verified 2026-03-28:
+- "DJ Catan" heading visible in Playfair Display serif font
+- Body text in Inter sans-serif
+- All 5 sections visible on scroll: Hero, About, Projects, Resume, Contact
+- No console errors, no 500 responses
 
 ## Next Phase Readiness
 - lib/projects.ts data contract is established — Phase 2 can consume it immediately
 - All 5 section stubs have id attributes — Phase 2 navigation anchor links will work
 - Build passes cleanly — ready for Vercel deployment as soon as user pushes to GitHub
-- Blocker: Vercel deployment must complete before this plan is fully done
+- Vercel deployment confirmed at https://portfolio-alpha-eight-40.vercel.app/ — all 5 sections visible, Playfair Display font rendering correctly, no console errors
 
 ## Self-Check: PASSED
 
