@@ -14,16 +14,17 @@ A visitor should leave knowing exactly who DJ is, be impressed by his work, and 
 
 - [x] Content placeholder system — placeholders everywhere so real content can be dropped in later *(Validated in Phase 1: Foundation)*
 - [x] Deployed to Vercel with custom domain support *(Validated in Phase 1: Foundation — live at https://portfolio-alpha-eight-40.vercel.app/)*
+- [x] Hero section — name, tagline, CTA, availability badge *(Validated in Phase 2: Home Page)*
+- [x] About section — bio, photo placeholder, two-column layout *(Validated in Phase 2: Home Page)*
+- [x] Projects showcase — responsive card grid from data layer *(Validated in Phase 2: Home Page)*
+- [x] Resume — downloadable PDF with placeholder *(Validated in Phase 2: Home Page)*
+- [x] Responsive design — mobile hamburger nav, single-column stacking *(Validated in Phase 2: Home Page)*
+- [x] Warm & personal visual design — cream palette, terracotta accent, Playfair Display headings *(Validated in Phase 2: Home Page)*
 
 ### Active
 
-- [ ] Hero section — name, tagline, and primary call-to-action
-- [ ] About section — bio, background, personality, what DJ is about
-- [ ] Projects showcase — featured projects with full case study pages + card grid for remaining projects
-- [ ] Resume — downloadable PDF and/or inline display
 - [ ] Contact section — links and/or form for reaching out
-- [ ] Responsive design — looks great on mobile and desktop
-- [ ] Warm & personal visual design — approachable, human, personality-forward
+- [ ] Project case study pages — full detail pages for featured projects
 
 ### Out of Scope
 
@@ -76,4 +77,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-28 after Phase 1: Foundation complete*
+*Last updated: 2026-03-28 after Phase 2: Home Page complete*
