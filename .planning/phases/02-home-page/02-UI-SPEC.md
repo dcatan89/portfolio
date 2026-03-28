@@ -1,7 +1,8 @@
 ---
 phase: 2
 slug: home-page
-status: draft
+status: approved
+reviewed_at: 2026-03-28
 shadcn_initialized: true
 preset: manual (components.json present, warm palette override required)
 created: 2026-03-28
@@ -56,22 +57,27 @@ Source: RESEARCH.md Architecture Patterns (Pattern 2, Pattern 6, Pattern 7) + CO
 
 ## Typography
 
-| Role | Font | Size | Weight | Line Height | Tailwind |
-|------|------|------|--------|-------------|---------|
-| Display / Hero name | Playfair Display | 60px (mobile: 48px) | 700 bold | 1.1 | `font-display text-5xl md:text-6xl font-bold` |
-| Section heading (h2) | Playfair Display | 36px | 700 bold | 1.2 | `font-display text-3xl md:text-4xl font-bold` |
-| Card title (h3) | Playfair Display | 20px | 600 semibold | 1.3 | `font-display text-xl font-semibold` |
-| Body / Bio | Inter | 16px | 400 regular | 1.6 | `font-body text-base font-normal leading-relaxed` |
-| UI label / tagline | Inter | 16px | 400 regular | 1.5 | `font-body text-base` |
-| Small / card desc | Inter | 14px | 400 regular | 1.5 | `font-body text-sm` |
-| XSmall / tags / badge | Inter | 12px | 500 medium | 1.4 | `font-body text-xs font-medium` |
+| Slot | Role | Font | Size | Weight | Line Height | Tailwind |
+|------|------|------|------|--------|-------------|---------|
+| A | Display / Hero name | Playfair Display | 60px desktop / 48px mobile | 700 bold | 1.1 | `font-display text-5xl md:text-6xl font-bold` |
+| B | Section heading (h2) | Playfair Display | 36px | 700 bold | 1.2 | `font-display text-3xl md:text-4xl font-bold` |
+| C | Body / Bio / Tagline / Intro lines / Navbar brand | Inter | 16px | 400 regular | 1.5–1.6 | `font-body text-base font-normal` (body adds `leading-relaxed`) |
+| D | Card title (h3) / Card desc / Navbar links / Footer copyright / Badge text / Tech tags | Inter / Playfair Display (card title only) | 14px | 400 regular (desc, links, footer, tags, badge) / 700 bold (card title h3) | 1.5 | See per-element notes below |
 
-Weights used: 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
-Note: Playfair Display uses 700 only. Inter uses 400, 500, 600.
-Justified: heading weight contrast is load-bearing for the warm/editorial aesthetic.
+**Per-element Tailwind classes (Slot D):**
+- Card title h3: `font-display text-sm font-bold text-foreground`
+- Card description: `font-body text-sm text-muted-foreground mt-2`
+- Navbar links: `font-body text-sm text-foreground hover:text-primary`
+- Footer copyright: `font-body text-sm text-muted-foreground`
+- Availability badge text: `font-body text-sm text-muted-foreground`
+- Featured badge: `font-body text-sm bg-primary/10 text-primary rounded-full px-2 py-0.5` (no explicit font-weight — defaults to 400)
+- Tech stack tags: `font-body text-sm bg-muted text-muted-foreground rounded-full px-3 py-1` (no explicit font-weight — defaults to 400)
 
-Navbar brand name: Playfair Display, 18px, weight 600 — `font-display text-lg font-semibold`
-Navbar links: Inter, 14px, weight 500 — `font-body text-sm font-medium`
+**Navbar brand:** Playfair Display, 16px, weight 700 — `font-display text-base font-bold text-foreground`
+
+Weights used: 400 (regular) and 700 (bold) only.
+- 400: body text, bio, tagline, intro lines, card descriptions, navbar links, footer text, badge text, tag text
+- 700: ALL headings — hero name (h1), section headings (h2), card titles (h3), navbar brand
 
 Source: CONTEXT.md D-10, D-19 + RESEARCH.md Pattern 2 + CLAUDE.md font decisions
 
@@ -144,8 +150,8 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | Background | `bg-background` (cream `#FAF8F5`) — solid always, no transparency |
 | Border | `border-b border-border` — 1px bottom only |
 | Max-width container | `max-w-5xl mx-auto px-6` |
-| Brand (left) | "DJ Catan" — Playfair Display 18px semibold, `text-foreground` |
-| Nav links (right, desktop) | "About", "Work", "Resume", "Contact" — Inter 14px medium, anchor links to `#about`, `#projects`, `#resume`, `#contact` |
+| Brand (left) | "DJ Catan" — Playfair Display 16px bold, `font-display text-base font-bold text-foreground` |
+| Nav links (right, desktop) | "About", "Work", "Resume", "Contact" — Inter 14px, `font-body text-sm text-foreground`, anchor links to `#about`, `#projects`, `#resume`, `#contact` |
 | Nav links hover | `hover:text-primary` — color shifts to terracotta, no underline |
 | Mobile breakpoint | Hide desktop links at `md:hidden`; show hamburger at `md:hidden` (visible mobile) |
 | Hamburger icon | `Menu` (lucide-react) when closed, `X` when open — 20px (`h-5 w-5`) |
@@ -162,8 +168,8 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | Section element | `<section id="hero">` |
 | Height | `min-h-screen` |
 | Layout | `flex flex-col items-center justify-center text-center relative` |
-| Heading (DJ's name) | Playfair Display, 60px desktop / 48px mobile, weight 700, `text-foreground` |
-| Tagline | Inter 16px, weight 400, `text-muted-foreground`, `mt-4` |
+| Heading (DJ's name) | Playfair Display, 60px desktop / 48px mobile, weight 700, `text-foreground` — `font-display text-5xl md:text-6xl font-bold` |
+| Tagline | Inter 16px, weight 400, `text-muted-foreground`, `mt-4` — `font-body text-base font-normal` |
 | Tagline copy | "Full-stack developer building thoughtful digital products." (placeholder) |
 | Vertical gap (name to tagline) | 16px (`mt-4`) |
 | Vertical gap (tagline to CTA group) | 32px (`mt-8`) |
@@ -171,7 +177,7 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | CTA action | `<a href="#projects">` — plain anchor, smooth scroll via CSS |
 | Availability badge | Pill adjacent to / below CTA, `mt-4`, `rounded-full border border-border bg-muted px-4 py-1.5` |
 | Badge dot | `h-2 w-2 rounded-full bg-green-500` + `animate-ping` outer ring `bg-green-400 opacity-75` |
-| Badge text | "Available for work" — Inter 14px, `text-muted-foreground` |
+| Badge text | "Available for work" — Inter 14px, `font-body text-sm text-muted-foreground` |
 | Scroll chevron | `ChevronDown` lucide-react, 24px, `animate-bounce text-muted-foreground`, `absolute bottom-8 left-1/2 -translate-x-1/2` |
 
 ### About Section
@@ -210,10 +216,10 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | Base styles | `rounded-xl border border-border bg-card p-6 shadow-sm` |
 | Hover | `hover:-translate-y-1 hover:shadow-md transition-all duration-200` |
 | Group class | `group` — enables `group-hover:` on children |
-| Title | Playfair Display 20px semibold (`font-display text-xl font-semibold text-foreground`) |
-| Description | Inter 14px regular, `text-muted-foreground mt-2` |
-| Featured badge | Small pill `"Featured"` — `text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-0.5` — only on `project.featured === true` |
-| Tech stack tags | `flex flex-wrap gap-2 mt-4` — each tag: `text-xs font-medium bg-muted text-muted-foreground rounded-full px-3 py-1` |
+| Title | Playfair Display 14px bold (`font-display text-sm font-bold text-foreground`) |
+| Description | Inter 14px regular, `font-body text-sm text-muted-foreground mt-2` |
+| Featured badge | Small pill `"Featured"` — `font-body text-sm bg-primary/10 text-primary rounded-full px-2 py-0.5` — only on `project.featured === true` |
+| Tech stack tags | `flex flex-wrap gap-2 mt-4` — each tag: `font-body text-sm bg-muted text-muted-foreground rounded-full px-3 py-1` |
 | Links row | `flex gap-3 mt-4 pt-4 border-t border-border` |
 | Live site link | `ExternalLink` lucide-react, 16px, `text-muted-foreground hover:text-primary transition-colors` — only shown if `project.links.live` exists |
 | GitHub link | `Github` lucide-react, 16px, `text-muted-foreground hover:text-primary transition-colors` — only shown if `project.links.github` exists |
@@ -228,8 +234,8 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | Container | `max-w-5xl mx-auto px-6` |
 | Layout | Single column centered, `text-center` or left-aligned (executor discretion) |
 | Heading | "Resume" — Playfair Display 36px bold |
-| Intro line | "Want the full picture? Grab my resume." — Inter 16px `text-muted-foreground mt-4` |
-| Download button | `<a href="/resume.pdf" download>` — filled terracotta button, same style as CTA: `bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg font-medium` |
+| Intro line | "Want the full picture? Grab my resume." — Inter 16px `font-body text-base text-muted-foreground mt-4` |
+| Download button | `<a href="/resume.pdf" download>` — filled terracotta button, same style as CTA: `bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg font-bold` |
 | Button label | "Download Resume" |
 | Prerequisite | `public/resume.pdf` must exist before component ships — placeholder blank PDF is acceptable |
 
@@ -242,7 +248,7 @@ Source: CONTEXT.md D-01 through D-05, D-12, D-15, D-24 + RESEARCH.md Pattern 1
 | Border | `border-t border-border` |
 | Background | `bg-background` (cream — no color break) |
 | Container | `max-w-5xl mx-auto px-6 flex items-center justify-between` |
-| Copyright (left) | "© 2026 DJ Catan" — Inter 14px `text-muted-foreground` |
+| Copyright (left) | "© 2026 DJ Catan" — Inter 14px `font-body text-sm text-muted-foreground` |
 | Social icons (right) | `flex gap-4` |
 | GitHub icon | `Github` lucide-react 20px, `<a href="https://github.com/..." aria-label="GitHub">`, `text-muted-foreground hover:text-primary transition-colors` |
 | LinkedIn icon | `Linkedin` lucide-react 20px, same pattern, aria-label="LinkedIn" |
