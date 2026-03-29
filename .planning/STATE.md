@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 03-contact-form 03-02-PLAN.md
-last_updated: "2026-03-29T03:02:24.236Z"
+status: executing
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-29T03:36:44.233Z"
 last_activity: 2026-03-29
 progress:
   total_phases: 5
   completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 9
+  completed_plans: 8
   percent: 50
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-27)
 
 **Core value:** A visitor should leave knowing exactly who DJ is, be impressed by his work, and have a clear way to reach out — all three, not one at the expense of the others.
-**Current focus:** Phase 03 — contact-form
+**Current focus:** Phase 04 — case-studies
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 04 (case-studies) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-03-29
 
 Progress: [█████░░░░░] 50%
@@ -58,6 +58,7 @@ Progress: [█████░░░░░] 50%
 | Phase 02-home-page P02 | 8 | 2 tasks | 3 files |
 | Phase 03-contact-form P01 | 15 | 2 tasks | 9 files |
 | Phase 03-contact-form P02 | 20 | 2 tasks | 2 files |
+| Phase 04 P01 | 5 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -84,6 +85,8 @@ Recent decisions affecting current work:
 - [Phase 02-02]: lucide-react v1.7.0 removed Github icon — replaced with GitBranch in Projects.tsx to unblock build
 - [Phase 03-contact-form]: register('website' as any) replaced with plain uncontrolled honeypot input — ESLint no-explicit-any is a build failure in Next.js; new FormData(formRef.current\!) still captures it
 - [Phase 03-contact-form]: ContactForm uses startTransition to wrap formAction — required in React 19 to avoid async function dispatched outside action context error
+- [Phase 04]: Navbar component created as new layout primitive — case study pages need site navigation and no Navbar existed
+- [Phase 04]: Featured project card icon links omitted to avoid nested anchor tags — case study page has full CTAs
 
 ### Pending Todos
 
@@ -96,6 +99,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-29T02:57:00.616Z
-Stopped at: Completed 03-contact-form 03-02-PLAN.md
+Last session: 2026-03-29T03:36:44.229Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None

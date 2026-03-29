@@ -74,9 +74,9 @@ Plans:
   1. Each featured project has a dedicated page at /projects/[slug] with Problem, My Role, Key Decisions, and Outcome sections
   2. Pages are statically generated at build time (generateStaticParams + dynamicParams = false) — no 404 on direct load
   3. A visitor navigating from the project card lands on the correct case study page
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 Plans:
-- [ ] 04-01-PLAN.md — Case study page with static generation and featured card linking
+- [x] 04-01-PLAN.md — Case study page with static generation and featured card linking
 - [ ] 04-02-PLAN.md — Deploy to Vercel and visual verification checkpoint
 **UI hint**: yes
 
@@ -102,5 +102,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation | 2/2 | Complete    | 2026-03-28 |
 | 2. Home Page | 3/3 | Complete   | 2026-03-28 |
 | 3. Contact Form | 2/2 | Complete   | 2026-03-29 |
-| 4. Case Studies | 0/2 | Planning complete | - |
+| 4. Case Studies | 1/2 | In Progress|  |
 | 5. Polish & Launch | 0/? | Not started | - |

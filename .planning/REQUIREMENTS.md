@@ -32,7 +32,7 @@
 ### Projects
 
 - [x] **PROJ-01**: Visitor can browse a card grid showing DJ's projects with title, description, and links
-- [ ] **PROJ-02**: Visitor can navigate to a full case study page for each featured project showing problem, process, and outcome
+- [x] **PROJ-02**: Visitor can navigate to a full case study page for each featured project showing problem, process, and outcome
 - [x] **PROJ-03**: Each project card displays tech stack tags showing what technologies were used
 - [x] **PROJ-04**: Each project card has links to the live site and/or GitHub source code
 
@@ -105,7 +105,7 @@
 | CONTACT-02 | Phase 3 | Complete |
 | CONTACT-03 | Phase 3 | Complete |
 | CONTACT-04 | Phase 3 | Complete |
-| PROJ-02 | Phase 4 | Pending |
+| PROJ-02 | Phase 4 | Complete |
 | POLISH-01 | Phase 5 | Pending |
 | POLISH-02 | Phase 5 | Pending |
 | POLISH-03 | Phase 5 | Pending |
