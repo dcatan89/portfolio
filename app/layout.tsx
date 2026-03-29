@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     template: '%s | DJ Catan',
   },
   description: 'Full-stack developer building thoughtful digital products.',
+  openGraph: {
+    type: 'website',
+    title: 'DJ Catan — Developer',
+    description: 'Full-stack developer building thoughtful digital products.',
+    url: '/',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'DJ Catan — Full-Stack Developer' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DJ Catan — Developer',
+    description: 'Full-stack developer building thoughtful digital products.',
+    images: ['/og.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -34,7 +51,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`scroll-smooth ${playfairDisplay.variable} ${inter.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+        >
+          Skip to content
+        </a>
+        {children}
+      </body>
     </html>
   )
 }

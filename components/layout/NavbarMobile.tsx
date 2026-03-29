@@ -10,7 +10,7 @@ export function NavbarMobile({ links }: { links: { label: string; href: string }
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="p-2 md:hidden"
+        className="rounded-md p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 md:hidden"
         aria-label="Toggle menu"
         aria-expanded={open}
       >
@@ -24,7 +24,7 @@ export function NavbarMobile({ links }: { links: { label: string; href: string }
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+                className="rounded-sm text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 {link.label}
               </a>

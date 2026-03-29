@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react'
 import { ContactForm } from '@/components/sections/ContactForm'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 function GitHubIcon({ className }: { className?: string }) {
   return (
@@ -32,6 +33,7 @@ function LinkedInIcon({ className }: { className?: string }) {
 export function Contact() {
   return (
     <section id="contact" className="px-6 py-24">
+      <AnimatedSection>
       <div className="mx-auto max-w-5xl">
         <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
           Get in Touch
@@ -55,7 +57,7 @@ export function Contact() {
               <Mail className="h-5 w-5 shrink-0 text-muted-foreground" />
               <a
                 href="mailto:danieljcatan@gmail.com"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="rounded-sm text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 danieljcatan@gmail.com
               </a>
@@ -68,7 +70,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="rounded-full text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 <GitHubIcon className="h-5 w-5" />
               </a>
@@ -77,7 +79,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                className="rounded-full text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 <LinkedInIcon className="h-5 w-5" />
               </a>
@@ -85,6 +87,7 @@ export function Contact() {
           </div>
         </div>
       </div>
+      </AnimatedSection>
     </section>
   )
 }
