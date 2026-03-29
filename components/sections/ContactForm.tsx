@@ -69,10 +69,10 @@ export function ContactForm() {
         <div className="mb-6 rounded-md bg-destructive/10 p-4 text-sm text-destructive">
           Something went wrong. Please try emailing directly at{' '}
           <a
-            href="mailto:hello@djcatan.com"
+            href="mailto:danieljcatan@gmail.com"
             className="text-primary underline underline-offset-4"
           >
-            hello@djcatan.com
+            danieljcatan@gmail.com
           </a>
         </div>
       )}

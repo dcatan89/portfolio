@@ -54,10 +54,10 @@ export function Contact() {
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 shrink-0 text-muted-foreground" />
               <a
-                href="mailto:hello@djcatan.com"
+                href="mailto:danieljcatan@gmail.com"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
-                hello@djcatan.com
+                danieljcatan@gmail.com
               </a>
             </div>
 
