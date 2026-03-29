@@ -25,6 +25,11 @@ A visitor should leave knowing exactly who DJ is, be impressed by his work, and 
 
 - [x] Contact section — Resend Server Action form + email/social links *(Validated in Phase 3: Contact Form)*
 - [x] Project case study pages — static `/projects/[slug]` pages with full narrative *(Validated in Phase 4: Case Studies)*
+- [x] Motion scroll-reveal animations on all sections — Hero stagger, About/Resume/Contact fade-up, Projects card cascade *(Validated in Phase 5: Polish & Launch)*
+- [x] Accessibility basics — skip-to-content link, focus rings on all interactive elements, ARIA on NavbarMobile *(Validated in Phase 5: Polish & Launch)*
+- [x] SEO metadata — OG/Twitter cards, home + case study page metadata, static OG image (1200×630) *(Validated in Phase 5: Polish & Launch)*
+- [x] Search discoverability — sitemap.xml, robots.txt *(Validated in Phase 5: Polish & Launch)*
+- [x] Responsive verification — confirmed visually correct at 375px, 768px, and 1280px *(Validated in Phase 5: Polish & Launch)*
 
 ### Out of Scope
 
@@ -77,4 +82,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-29 after Phase 4: Case Studies complete*
+*Last updated: 2026-03-29 after Phase 5: Polish & Launch complete — v1.0 milestone complete*
