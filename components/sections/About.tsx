@@ -1,8 +1,10 @@
 import { User } from 'lucide-react'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 export function About() {
   return (
     <section id="about" className="px-6 py-24">
+      <AnimatedSection>
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-start gap-12 md:grid-cols-2">
         {/* Photo placeholder — left column */}
         <div className="flex justify-center md:justify-start">
@@ -34,6 +36,7 @@ export function About() {
           </div>
         </div>
       </div>
+      </AnimatedSection>
     </section>
   )
 }

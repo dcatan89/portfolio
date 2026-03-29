@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { ExternalLink, GitBranch } from 'lucide-react'
 import { allProjects } from '@/lib/projects'
 import type { Project } from '@/lib/projects'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
+import { AnimatedCard } from '@/components/ui/AnimatedCard'
 
 function ProjectCard({ project }: { project: Project }) {
   const article = (
@@ -69,14 +71,18 @@ function ProjectCard({ project }: { project: Project }) {
 export function Projects() {
   return (
     <section id="projects" className="px-8 py-24">
-      <h2 className="font-display text-3xl font-bold text-foreground">Work</h2>
-      <p className="mt-4 max-w-xl text-muted-foreground">
-        A selection of projects — some shipped, some experiments, all meaningful.
-      </p>
+      <AnimatedSection>
+        <h2 className="font-display text-3xl font-bold text-foreground">Work</h2>
+        <p className="mt-4 max-w-xl text-muted-foreground">
+          A selection of projects — some shipped, some experiments, all meaningful.
+        </p>
+      </AnimatedSection>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {allProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {allProjects.map((project, index) => (
+          <AnimatedCard key={project.id} index={index}>
+            <ProjectCard project={project} />
+          </AnimatedCard>
         ))}
       </div>
     </section>

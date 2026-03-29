@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Image as ImageIcon } from 'lucide-react'
 import { Navbar } from '@/components/layout/Navbar'
 import { featuredProjects } from '@/lib/projects'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 export const dynamicParams = false
 
@@ -28,6 +29,12 @@ export async function generateMetadata({
   return {
     title: project.title,
     description: project.description,
+    openGraph: {
+      title: project.title,
+      description: project.description,
+      type: 'article',
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: project.title }],
+    },
   }
 }
 
@@ -46,58 +53,68 @@ export default async function CaseStudyPage({
   return (
     <>
       <Navbar />
-      <main className="px-6 py-12 md:py-24">
+      <main id="main-content" className="px-6 py-12 md:py-24">
         <div className="mx-auto max-w-3xl">
           {/* Back link */}
-          <Link
-            href="/#projects"
-            className="text-sm text-muted-foreground transition-colors hover:text-primary"
-          >
-            &larr; All projects
-          </Link>
+          <AnimatedSection>
+            <Link
+              href="/#projects"
+              className="rounded-sm text-sm text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            >
+              &larr; All projects
+            </Link>
 
-          {/* Page heading */}
-          <h1 className="mt-8 font-display text-4xl font-bold text-foreground md:text-5xl">
-            {project.title}
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground">{project.description}</p>
+            {/* Page heading */}
+            <h1 className="mt-8 font-display text-4xl font-bold text-foreground md:text-5xl">
+              {project.title}
+            </h1>
+            <p className="mt-4 text-lg text-muted-foreground">{project.description}</p>
 
-          {/* Hero image placeholder */}
-          <div className="mt-10 flex aspect-video w-full items-center justify-center rounded-xl bg-muted">
-            <ImageIcon className="h-12 w-12 text-muted-foreground" />
-          </div>
+            {/* Hero image placeholder */}
+            <div className="mt-10 flex aspect-video w-full items-center justify-center rounded-xl bg-muted">
+              <ImageIcon className="h-12 w-12 text-muted-foreground" />
+            </div>
+          </AnimatedSection>
 
           {/* Problem */}
-          <section className="pt-12">
-            <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Problem
-            </h2>
-            <p className="mt-4 leading-relaxed text-foreground">{project.problem}</p>
-          </section>
+          <AnimatedSection>
+            <section className="pt-12">
+              <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+                Problem
+              </h2>
+              <p className="mt-4 leading-relaxed text-foreground">{project.problem}</p>
+            </section>
+          </AnimatedSection>
 
           {/* My Role */}
-          <section className="pt-12">
-            <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              My Role
-            </h2>
-            <p className="mt-4 leading-relaxed text-foreground">{project.role}</p>
-          </section>
+          <AnimatedSection>
+            <section className="pt-12">
+              <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+                My Role
+              </h2>
+              <p className="mt-4 leading-relaxed text-foreground">{project.role}</p>
+            </section>
+          </AnimatedSection>
 
           {/* Key Decisions */}
-          <section className="pt-12">
-            <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Key Decisions
-            </h2>
-            <p className="mt-4 leading-relaxed text-foreground">{project.keyDecisions}</p>
-          </section>
+          <AnimatedSection>
+            <section className="pt-12">
+              <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+                Key Decisions
+              </h2>
+              <p className="mt-4 leading-relaxed text-foreground">{project.keyDecisions}</p>
+            </section>
+          </AnimatedSection>
 
           {/* Outcome */}
-          <section className="pt-12">
-            <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Outcome
-            </h2>
-            <p className="mt-4 leading-relaxed text-foreground">{project.outcome}</p>
-          </section>
+          <AnimatedSection>
+            <section className="pt-12">
+              <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
+                Outcome
+              </h2>
+              <p className="mt-4 leading-relaxed text-foreground">{project.outcome}</p>
+            </section>
+          </AnimatedSection>
 
           {/* Tech stack tags */}
           <div className="pt-12">
