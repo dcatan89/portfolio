@@ -23,7 +23,7 @@ A visitor should leave knowing exactly who DJ is, be impressed by his work, and 
 
 ### Active
 
-- [ ] Contact section — links and/or form for reaching out
+- [x] Contact section — Resend Server Action form + email/social links *(Validated in Phase 3: Contact Form)*
 - [ ] Project case study pages — full detail pages for featured projects
 
 ### Out of Scope
@@ -77,4 +77,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-28 after Phase 2: Home Page complete*
+*Last updated: 2026-03-28 after Phase 3: Contact Form complete*
