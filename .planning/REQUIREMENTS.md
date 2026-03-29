@@ -42,10 +42,10 @@
 
 ### Contact
 
-- [ ] **CONTACT-01**: Visitor can submit a contact form with name, email, and message fields, delivered via Resend Server Action
-- [ ] **CONTACT-02**: Visitor can find links to DJ's social profiles (GitHub, LinkedIn) in the Contact section
-- [ ] **CONTACT-03**: Visitor can see DJ's email address displayed directly in the Contact section
-- [ ] **CONTACT-04**: Contact form has honeypot spam protection without CAPTCHA friction for real users
+- [x] **CONTACT-01**: Visitor can submit a contact form with name, email, and message fields, delivered via Resend Server Action
+- [x] **CONTACT-02**: Visitor can find links to DJ's social profiles (GitHub, LinkedIn) in the Contact section
+- [x] **CONTACT-03**: Visitor can see DJ's email address displayed directly in the Contact section
+- [x] **CONTACT-04**: Contact form has honeypot spam protection without CAPTCHA friction for real users
 
 ### Polish
 
@@ -101,10 +101,10 @@
 | PROJ-03 | Phase 2 | Complete |
 | PROJ-04 | Phase 2 | Complete |
 | RESUME-01 | Phase 2 | Complete |
-| CONTACT-01 | Phase 3 | Pending |
-| CONTACT-02 | Phase 3 | Pending |
-| CONTACT-03 | Phase 3 | Pending |
-| CONTACT-04 | Phase 3 | Pending |
+| CONTACT-01 | Phase 3 | Complete |
+| CONTACT-02 | Phase 3 | Complete |
+| CONTACT-03 | Phase 3 | Complete |
+| CONTACT-04 | Phase 3 | Complete |
 | PROJ-02 | Phase 4 | Pending |
 | POLISH-01 | Phase 5 | Pending |
 | POLISH-02 | Phase 5 | Pending |

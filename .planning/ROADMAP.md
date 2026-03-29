@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Next.js scaffold, Vercel deploy, lib/projects.ts, placeholder content system (completed 2026-03-28)
 - [x] **Phase 2: Home Page** - Navbar, footer, hero, about, projects grid, and resume download (completed 2026-03-28)
-- [ ] **Phase 3: Contact Form** - Server Action, Resend integration, spam protection, and contact links
+- [x] **Phase 3: Contact Form** - Server Action, Resend integration, spam protection, and contact links (completed 2026-03-29)
 - [ ] **Phase 4: Case Studies** - Full narrative case study pages for featured projects
 - [ ] **Phase 5: Polish & Launch** - Animations, SEO, accessibility, cross-device testing
 
@@ -60,10 +60,10 @@ Plans:
   2. DJ receives the submission as an email via Resend (verified with a real test submission from a mobile device)
   3. Visitor can find DJ's email address and social profile links (GitHub, LinkedIn) without submitting the form
   4. A bot submitting the honeypot field does not trigger an email send
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 Plans:
-- [ ] 03-01-PLAN.md — Install deps (RHF, Zod, Resend), add shadcn/ui form primitives, create Zod schema and Server Action
-- [ ] 03-02-PLAN.md — Build ContactForm client component, replace Contact section stub with two-column layout + social links
+- [x] 03-01-PLAN.md — Install deps (RHF, Zod, Resend), add shadcn/ui form primitives, create Zod schema and Server Action
+- [x] 03-02-PLAN.md — Build ContactForm client component, replace Contact section stub with two-column layout + social links
 **UI hint**: yes
 
 ### Phase 4: Case Studies
@@ -98,6 +98,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-28 |
 | 2. Home Page | 3/3 | Complete   | 2026-03-28 |
-| 3. Contact Form | 0/2 | Not started | - |
+| 3. Contact Form | 2/2 | Complete   | 2026-03-29 |
 | 4. Case Studies | 0/? | Not started | - |
 | 5. Polish & Launch | 0/? | Not started | - |
