@@ -49,10 +49,10 @@
 
 ### Polish
 
-- [ ] **POLISH-01**: Sections and interactive elements have subtle entrance animations and hover effects using Motion
+- [x] **POLISH-01**: Sections and interactive elements have subtle entrance animations and hover effects using Motion
 - [x] **POLISH-02**: Every page has accurate SEO metadata (title, description, Open Graph tags) for good sharing and search
 - [ ] **POLISH-03**: All sections are fully responsive and visually tested on mobile and tablet viewports
-- [ ] **POLISH-04**: Site meets accessibility basics: keyboard navigation, alt text on images, visible focus states
+- [x] **POLISH-04**: Site meets accessibility basics: keyboard navigation, alt text on images, visible focus states
 
 ## v2 Requirements
 
@@ -106,10 +106,10 @@
 | CONTACT-03 | Phase 3 | Complete |
 | CONTACT-04 | Phase 3 | Complete |
 | PROJ-02 | Phase 4 | Complete |
-| POLISH-01 | Phase 5 | Pending |
+| POLISH-01 | Phase 5 | Complete |
 | POLISH-02 | Phase 5 | Complete |
 | POLISH-03 | Phase 5 | Pending |
-| POLISH-04 | Phase 5 | Pending |
+| POLISH-04 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 25 total
