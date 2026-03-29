@@ -55,7 +55,7 @@ export function ContactForm() {
         </p>
         <button
           onClick={handleSendAnother}
-          className="mt-6 text-sm text-primary underline underline-offset-4 hover:text-primary/80 transition-colors"
+          className="mt-6 rounded-sm text-sm text-primary underline underline-offset-4 hover:text-primary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         >
           Send another
         </button>

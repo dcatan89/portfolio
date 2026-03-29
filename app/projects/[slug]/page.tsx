@@ -138,7 +138,7 @@ export default async function CaseStudyPage({
                   href={project.links.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg bg-primary px-8 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                  className="rounded-lg bg-primary px-8 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
                   View Live Site
                 </a>
@@ -148,7 +148,7 @@ export default async function CaseStudyPage({
                   href={project.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-border px-8 py-3 font-bold text-foreground transition-colors hover:bg-muted"
+                  className="rounded-lg border border-border px-8 py-3 font-bold text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
                   View on GitHub
                 </a>
