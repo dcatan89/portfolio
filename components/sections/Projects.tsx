@@ -1,27 +1,19 @@
-import { allProjects, type Project } from '@/lib/projects'
+import Link from 'next/link'
 import { ExternalLink, GitBranch } from 'lucide-react'
+import { allProjects } from '@/lib/projects'
+import type { Project } from '@/lib/projects'
 
 function ProjectCard({ project }: { project: Project }) {
-  return (
-    <article className="group rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
-      {/* Header: title + featured badge */}
-      <div className="flex items-start justify-between gap-2">
-        <h3 className="font-display text-sm font-bold text-foreground">
-          {project.title}
-        </h3>
-        {project.featured && (
-          <span className="shrink-0 rounded-full bg-primary/10 px-2 py-0.5 text-sm text-primary">
-            Featured
-          </span>
-        )}
-      </div>
-
-      {/* Description */}
-      <p className="mt-2 text-sm text-muted-foreground">
+  const article = (
+    <article
+      className={`flex flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md${project.featured ? ' cursor-pointer' : ''}`}
+    >
+      <h3 className="font-display text-xl font-bold text-foreground">{project.title}</h3>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
         {project.description}
       </p>
 
-      {/* Tech stack tags */}
+      {/* Tech stack pills */}
       <div className="mt-4 flex flex-wrap gap-2">
         {project.techStack.map((tech) => (
           <span
@@ -33,16 +25,16 @@ function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
 
-      {/* Links */}
-      {(project.links.live || project.links.github) && (
-        <div className="mt-4 flex gap-3 border-t border-border pt-4">
+      {/* External links — only for non-featured cards (featured cards link to full case study) */}
+      {!project.featured && (project.links.live || project.links.github) && (
+        <div className="mt-4 flex gap-3">
           {project.links.live && (
             <a
               href={project.links.live}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`View ${project.title} live site`}
               className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="View live site"
             >
               <ExternalLink className="h-4 w-4" />
             </a>
@@ -52,8 +44,8 @@ function ProjectCard({ project }: { project: Project }) {
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`View ${project.title} on GitHub`}
               className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="View on GitHub"
             >
               <GitBranch className="h-4 w-4" />
             </a>
@@ -62,34 +54,30 @@ function ProjectCard({ project }: { project: Project }) {
       )}
     </article>
   )
-}
 
-export function Projects() {
-  if (allProjects.length === 0) {
+  if (project.featured) {
     return (
-      <section id="projects" className="px-6 py-24">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-            Work
-          </h2>
-          <p className="mt-4 text-muted-foreground">No projects yet.</p>
-          <p className="text-sm text-muted-foreground">Check back soon.</p>
-        </div>
-      </section>
+      <Link href={`/projects/${project.slug}`} className="block">
+        {article}
+      </Link>
     )
   }
 
+  return article
+}
+
+export function Projects() {
   return (
-    <section id="projects" className="px-6 py-24">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-          Work
-        </h2>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {allProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+    <section id="projects" className="px-8 py-24">
+      <h2 className="font-display text-3xl font-bold text-foreground">Work</h2>
+      <p className="mt-4 max-w-xl text-muted-foreground">
+        A selection of projects — some shipped, some experiments, all meaningful.
+      </p>
+
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {allProjects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </section>
   )
