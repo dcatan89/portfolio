@@ -89,7 +89,11 @@ Plans:
   2. Production HTML does not contain a noindex meta tag, and sharing a URL on Slack/LinkedIn shows a correct Open Graph preview
   3. Every page is fully usable with keyboard navigation only, all images have alt text, and focus states are visible
   4. Home page and case study pages are visually correct on a real mobile device (375px) and tablet (768px)
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 05-01-PLAN.md — Motion scroll-reveal animations, Hero stagger, project card cascade, skip-to-content link, focus rings, ARIA verification
+- [ ] 05-02-PLAN.md — SEO metadata (OG, Twitter, robots), static OG image, sitemap.ts, robots.ts
+- [ ] 05-03-PLAN.md — Deploy to Vercel and responsive visual verification checkpoint
 **UI hint**: yes
 
 ## Progress
@@ -103,4 +107,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Home Page | 3/3 | Complete   | 2026-03-28 |
 | 3. Contact Form | 2/2 | Complete   | 2026-03-29 |
 | 4. Case Studies | 1/2 | In Progress|  |
-| 5. Polish & Launch | 0/? | Not started | - |
+| 5. Polish & Launch | 0/3 | Not started | - |
