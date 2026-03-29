@@ -77,7 +77,7 @@ Plans:
 **Plans:** 1/2 plans executed
 Plans:
 - [x] 04-01-PLAN.md — Case study page with static generation and featured card linking
-- [ ] 04-02-PLAN.md — Deploy to Vercel and visual verification checkpoint
+- [x] 04-02-PLAN.md — Deploy to Vercel and visual verification checkpoint
 **UI hint**: yes
 
 ### Phase 5: Polish & Launch
