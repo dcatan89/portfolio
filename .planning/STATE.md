@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-03-27)
 Phase: 05
 Plan: Not started
 Status: Ready to execute
-Last activity: 2026-03-29
+Last activity: 2026-03-30 - Completed quick task 260330-k9y: Replace placeholder resume PDF with real resume, update About bio with real copy
 
 Progress: [█████░░░░░] 50%
 
@@ -98,6 +98,12 @@ Recent decisions affecting current work:
 ### Pending Todos
 
 None yet.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260330-k9y | Replace placeholder resume PDF with real resume, update About bio with real copy | 2026-03-30 | d67c209 | [260330-k9y-replace-placeholder-resume-pdf-with-real](.planning/quick/260330-k9y-replace-placeholder-resume-pdf-with-real/) |
 
 ### Blockers/Concerns
 
