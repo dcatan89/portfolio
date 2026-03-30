@@ -20,18 +20,17 @@ export function About() {
           </h2>
           <div className="mt-6 space-y-4 leading-relaxed text-foreground">
             <p>
-              Hey, I&apos;m DJ. I build things for the web and care about getting
-              the details right.
+              I&apos;m a developer with an unconventional path &mdash; economics
+              degree, cancer diagnostic lab technician, self-taught coder,
+              bootcamp graduate &mdash; and I wouldn&apos;t have it any other
+              way. Each chapter sharpened how I think and solve problems.
             </p>
             <p>
-              With a background spanning full-stack development, I focus on
-              creating digital products that are as thoughtful under the hood as
-              they are on the surface.
-            </p>
-            <p>
-              When I&apos;m not coding, you can find me exploring new ideas,
-              learning something new, or finding ways to make complex things
-              simple.
+              I care about writing clean, purposeful code and staying on the
+              cutting edge of how developers actually work. These days that means
+              integrating AI tools like Claude Code into real workflows &mdash;
+              not just using them as autocomplete, but as a genuine productivity
+              multiplier.
             </p>
           </div>
         </div>
