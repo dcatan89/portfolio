@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { Image as ImageIcon } from 'lucide-react'
@@ -70,10 +71,23 @@ export default async function CaseStudyPage({
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">{project.description}</p>
 
-            {/* Hero image placeholder */}
-            <div className="mt-10 flex aspect-video w-full items-center justify-center rounded-xl bg-muted">
-              <ImageIcon className="h-12 w-12 text-muted-foreground" />
-            </div>
+            {/* Hero image */}
+            {project.image ? (
+              <div className="mt-10 overflow-hidden rounded-xl border border-border">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} demo`}
+                  width={800}
+                  height={294}
+                  className="w-full"
+                  unoptimized
+                />
+              </div>
+            ) : (
+              <div className="mt-10 flex aspect-video w-full items-center justify-center rounded-xl bg-muted">
+                <ImageIcon className="h-12 w-12 text-muted-foreground" />
+              </div>
+            )}
           </AnimatedSection>
 
           {/* Problem */}

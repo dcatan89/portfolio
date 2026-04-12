@@ -6,6 +6,7 @@ export interface Project {
   techStack: string[]
   links: { live?: string; github?: string }
   featured: boolean
+  image?: string
   problem: string
   role: string
   keyDecisions: string
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     techStack: ['Python', 'discord.py', 'Claude CLI', 'asyncio', 'aiohttp'],
     links: { live: undefined, github: undefined },
     featured: true,
+    image: '/carrot-cake-demo.gif',
     problem:
       'My girlfriend and I needed a centralized way to manage our household — shared grocery lists, budget tracking, date night ideas, chore assignments, health reminders, and more. Existing apps meant juggling 10+ separate tools with no single source of truth. I wanted one place where we could manage everything through natural conversation and quick commands.',
     role: 'Solo developer. Designed the architecture, built every feature module, wrote the AI integration layer, and operate it daily as a real product for a two-person household.',
