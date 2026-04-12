@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: 'carrot-cake',
     title: 'Carrot Cake — Discord Assistant',
     description:
-      'A full-featured Discord bot and household assistant with 86 slash commands, AI chat powered by Claude, and 30+ modular features spanning budgeting, health tracking, meal planning, and more.',
+      'A full-featured Discord bot and household assistant — named after our tortoiseshell cat — with 86 slash commands, AI chat powered by Claude, and 30+ modular features spanning budgeting, health tracking, meal planning, and more.',
     techStack: ['Python', 'discord.py', 'Claude CLI', 'asyncio', 'aiohttp'],
     links: { live: undefined, github: undefined },
     featured: true,
