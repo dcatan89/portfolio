@@ -35,7 +35,7 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">&copy; 2026 DJ Catan</p>
         <div className="flex gap-4">
           <a
-            href="https://github.com/"
+            href="https://github.com/dcatan89"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -44,7 +44,7 @@ export function Footer() {
             <GitHubIcon className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/daniel-catan"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -53,7 +53,7 @@ export function Footer() {
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
-            href="mailto:hello@djcatan.com"
+            href="mailto:danieljcatan@gmail.com"
             aria-label="Email"
             className="rounded-full p-2 text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >

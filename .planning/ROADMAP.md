@@ -108,3 +108,64 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 3. Contact Form | 2/2 | Complete   | 2026-03-29 |
 | 4. Case Studies | 1/2 | In Progress|  |
 | 5. Polish & Launch | 2/3 | In Progress|  |
+
+---
+
+## v1.1 — Post-Launch Polish
+
+> Added: 2026-04-21 (audit by Megumi). These phases begin after v1.0 ships.
+> Full details in `.planning/IMPROVEMENT-PLAN.md`.
+
+### Pre-Launch Blockers (complete before sharing the URL)
+
+These are not new phases — they are content and config tasks that must be done inside the current milestone before it can be considered truly launched.
+
+| Blocker | Task | File |
+|---------|------|------|
+| BLOCKER-1 | Fill in all 3 real projects in data layer | `lib/projects.ts` |
+| BLOCKER-2 | Set `RESEND_API_KEY` in Vercel env vars and verify contact form | Vercel dashboard |
+| BLOCKER-3 | Fix footer email: change `hello@djcatan.com` → `danieljcatan@gmail.com` | `components/sections/Footer.tsx` |
+| BLOCKER-4 | Execute Phase 5 Plan 3 responsive verification checklist | Manual pass |
+
+### Phase 6: Content Polish (~2 hours)
+**Goal**: The portfolio shows a real person with a real story and real work
+**Depends on**: Pre-launch blockers resolved
+**Tasks:**
+1. Add real headshot — replace About placeholder icon with `next/image`
+2. Sharpen Hero tagline — make it specific to DJ's background (economics → lab → dev → AI tooling)
+3. Audit case study copy for authenticity and specificity
+**Verify:** Share URL with one trusted person; ask "does this feel like a real developer?"
+
+### Phase 7: Domain & Professional Email (~1 hour)
+**Goal**: The portfolio lives at a professional URL and contact email matches
+**Depends on**: Phase 6
+**Tasks:**
+1. Purchase custom domain (e.g., `djcatan.com`) if not owned
+2. Connect domain to Vercel project (`Settings → Domains`)
+3. Set up `hello@djcatan.com` forwarding or mailbox
+4. Update footer mailto to `hello@djcatan.com`
+5. Verify domain in Resend; update `from` address in server action
+6. Update `metadataBase` in `app/layout.tsx` to custom domain
+**Verify:** `https://djcatan.com` loads the site; contact form email arrives from custom domain address.
+
+### Phase 8: GitHub Signal (~30 minutes)
+**Goal**: GitHub profile reinforces that DJ ships real code
+**Depends on**: Phase 7
+**Tasks:**
+1. Pin relevant repos to GitHub profile (or make portfolio repo public)
+2. Ensure pinned repos have README files
+3. Verify `https://github.com/dcatan89` looks like an active developer
+**Verify:** Profile has pinned repos with clear README descriptions.
+
+---
+
+## Out of Scope (v1.x)
+
+These items were evaluated and explicitly excluded. Reasons remain valid as of 2026-04-21:
+
+| Feature | Why Out of Scope |
+|---------|-----------------|
+| Blog / writing section | Adds weeks of scope; empty blogs hurt more than help; revisit when 3+ posts are ready |
+| Dark mode toggle | Warm palette is the brand identity; a toggle creates a second design system |
+| CMS integration | Content fits in code at this scale; add when content volume demands it |
+| Auth / user accounts | No use case for a public portfolio |

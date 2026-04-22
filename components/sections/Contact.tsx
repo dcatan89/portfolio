@@ -66,7 +66,7 @@ export function Contact() {
             {/* Social links */}
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/"
+                href="https://github.com/dcatan89"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -75,7 +75,7 @@ export function Contact() {
                 <GitHubIcon className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/daniel-catan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
