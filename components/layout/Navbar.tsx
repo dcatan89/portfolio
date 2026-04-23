@@ -1,34 +1,81 @@
+'use client'
 import { NavbarMobile } from './NavbarMobile'
+import { NavClock } from './NavClock'
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Work', href: '#projects' },
-  { label: 'Resume', href: '#resume' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '#about', idx: '01' },
+  { label: 'Work', href: '#work', idx: '02' },
+  { label: 'Contact', href: '#contact', idx: '03' },
 ]
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        {/* Brand — left */}
-        <a href="#hero" className="rounded-sm font-display text-base font-bold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
-          DJ Catan
+    <header
+      style={{
+        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
+        backdropFilter: 'blur(10px)',
+        background: 'color-mix(in oklab, var(--bg) 78%, transparent)',
+        borderBottom: '1px solid var(--rule-faint)',
+      }}
+    >
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr auto 1fr',
+          alignItems: 'center',
+          height: 56,
+          maxWidth: 1440,
+          margin: '0 auto',
+          padding: '0 40px',
+        }}
+      >
+        {/* Brand */}
+        <a
+          href="#hero"
+          style={{
+            display: 'flex', alignItems: 'center', gap: 10,
+            fontFamily: 'var(--font-jetbrains-mono)',
+            fontSize: 12, letterSpacing: '0.06em',
+            color: 'var(--ink)', textDecoration: 'none',
+          }}
+        >
+          <span
+            style={{
+              width: 8, height: 8, borderRadius: 2,
+              background: 'var(--accent)',
+              transform: 'rotate(45deg)',
+              display: 'inline-block', flexShrink: 0,
+            }}
+          />
+          DJ&nbsp;CATAN
         </a>
-        {/* Desktop nav — right, hidden on mobile */}
-        <nav className="hidden gap-6 md:flex">
+
+        {/* Center nav — hidden on mobile */}
+        <nav className="hidden md:flex" style={{ gap: 28 }} aria-label="Primary">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="rounded-sm text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              style={{
+                fontFamily: 'var(--font-jetbrains-mono)',
+                fontSize: 12, color: 'var(--muted)',
+                textDecoration: 'none', position: 'relative',
+                padding: '4px 0', transition: 'color .2s',
+              }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'var(--ink)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted)')}
             >
+              <span style={{ color: 'var(--faint)', marginRight: 6 }}>{link.idx}</span>
               {link.label}
             </a>
           ))}
         </nav>
-        {/* Mobile hamburger — visible on mobile only */}
-        <NavbarMobile links={navLinks} />
+
+        {/* Right — clock on desktop, hamburger on mobile */}
+        <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: 14 }}>
+          <NavClock />
+          <NavbarMobile links={navLinks} />
+        </div>
       </div>
     </header>
   )

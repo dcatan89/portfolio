@@ -1,16 +1,23 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const playfairDisplay = Playfair_Display({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  variable: '--font-playfair-display',
+  variable: '--font-fraunces',
   display: 'swap',
+  axes: ['SOFT', 'WONK', 'opsz'],
 })
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
   display: 'swap',
 })
 
@@ -38,23 +45,21 @@ export const metadata: Metadata = {
     description: 'Full-stack developer building thoughtful digital products.',
     images: ['/og.png'],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`scroll-smooth ${playfairDisplay.variable} ${inter.variable}`}>
-      <body className="font-body antialiased">
+    <html
+      lang="en"
+      className={`scroll-smooth ${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="antialiased" style={{ fontFamily: 'var(--font-inter), ui-sans-serif, system-ui, sans-serif' }}>
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-[#c5552d] focus:px-4 focus:py-2 focus:text-white"
         >
           Skip to content
         </a>

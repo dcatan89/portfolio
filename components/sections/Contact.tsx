@@ -1,93 +1,168 @@
-import { Mail } from 'lucide-react'
-import { ContactForm } from '@/components/sections/ContactForm'
+'use client'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
-function GitHubIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-    </svg>
-  )
-}
-
-function LinkedInIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  )
-}
+const extIcon = (
+  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+    <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
+  </svg>
+)
 
 export function Contact() {
   return (
-    <section id="contact" className="px-6 py-24">
-      <AnimatedSection>
-      <div className="mx-auto max-w-5xl">
-        <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-          Get in Touch
-        </h2>
-        <p className="mt-4 text-muted-foreground">
-          Drop me a message or reach out directly.
-        </p>
+    <section id="contact" style={{ position: 'relative', padding: '160px 0 80px' }}>
+      <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 40px' }}>
 
-        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-[3fr_2fr]">
-          {/* Left column: Contact form */}
-          <ContactForm />
+        {/* Section head */}
+        <div style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: 40, marginBottom: 0 }} className="section-head">
+          <div style={{ fontFamily: 'var(--font-jetbrains-mono)', fontSize: 12, color: 'var(--muted)', paddingTop: 6 }}>
+            § 03 — Contact
+          </div>
+          <div />
+        </div>
 
-          {/* Right column: Direct contact info */}
-          <div className="space-y-6">
-            <h3 className="font-display text-xl font-semibold text-foreground">
-              Reach Out Directly
-            </h3>
+        {/* Big mailto */}
+        <AnimatedSection>
+          <div style={{
+            fontFamily: 'var(--font-fraunces)',
+            fontWeight: 300,
+            fontSize: 'clamp(52px, 9vw, 140px)',
+            lineHeight: 0.92,
+            letterSpacing: '-0.035em',
+            maxWidth: '18ch',
+            marginTop: 32,
+          }}>
+            Got an idea worth building?{' '}
+            <em style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 300 }}>Say hello</em>{' '}
+            —{' '}
+            <a
+              href="mailto:danieljcatan@gmail.com"
+              className="contact-mailto"
+              style={{
+                position: 'relative',
+                display: 'inline-block',
+                borderBottom: '2px solid var(--ink)',
+                transition: 'color .3s, border-color .3s',
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={e => {
+                ;(e.currentTarget as HTMLElement).style.color = 'var(--accent)'
+                ;(e.currentTarget as HTMLElement).style.borderColor = 'var(--accent)'
+              }}
+              onMouseLeave={e => {
+                ;(e.currentTarget as HTMLElement).style.color = 'var(--ink)'
+                ;(e.currentTarget as HTMLElement).style.borderColor = 'var(--ink)'
+              }}
+            >
+              danieljcatan@gmail.com.
+            </a>
+          </div>
+        </AnimatedSection>
 
-            {/* Email */}
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 shrink-0 text-muted-foreground" />
-              <a
-                href="mailto:danieljcatan@gmail.com"
-                className="rounded-sm text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              >
-                danieljcatan@gmail.com
-              </a>
-            </div>
+        {/* Contact grid */}
+        <div
+          style={{
+            marginTop: 80,
+            display: 'grid',
+            gridTemplateColumns: '140px 1fr 1fr 1fr 1fr',
+            gap: 32,
+            paddingTop: 32,
+            borderTop: '1px solid var(--rule-faint)',
+          }}
+          className="contact-grid"
+        >
+          <div />
 
-            {/* Social links */}
-            <div className="flex items-center gap-3">
-              <a
-                href="https://github.com/dcatan89"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="rounded-full text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              >
-                <GitHubIcon className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/daniel-catan"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="rounded-full text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              >
-                <LinkedInIcon className="h-5 w-5" />
-              </a>
-            </div>
+          {/* Email */}
+          <div>
+            <div style={{ fontFamily: 'var(--font-jetbrains-mono)', fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>Email</div>
+            <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'grid', gap: 6 }}>
+              <li>
+                <a
+                  href="mailto:danieljcatan@gmail.com"
+                  style={{ fontSize: 14, color: 'var(--ink)', display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', transition: 'color .2s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink)')}
+                >
+                  danieljcatan@gmail.com {extIcon}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social */}
+          <div>
+            <div style={{ fontFamily: 'var(--font-jetbrains-mono)', fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>Social</div>
+            <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'grid', gap: 6 }}>
+              <li>
+                <a
+                  href="https://github.com/dcatan89"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: 14, color: 'var(--ink)', display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', transition: 'color .2s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink)')}
+                >
+                  GitHub {extIcon}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/daniel-catan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: 14, color: 'var(--ink)', display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', transition: 'color .2s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink)')}
+                >
+                  LinkedIn {extIcon}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Currently */}
+          <div>
+            <div style={{ fontFamily: 'var(--font-jetbrains-mono)', fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>Currently</div>
+            <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'grid', gap: 6 }}>
+              <li style={{ fontSize: 14, color: 'var(--ink)' }}>Available for full-time + contract</li>
+              <li style={{ fontSize: 14, color: 'var(--muted)' }}>Replying within 24h</li>
+            </ul>
+          </div>
+
+          {/* Elsewhere */}
+          <div>
+            <div style={{ fontFamily: 'var(--font-jetbrains-mono)', fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>Elsewhere</div>
+            <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'grid', gap: 6 }}>
+              <li>
+                <a
+                  href="/resume.pdf"
+                  download
+                  style={{ fontSize: 14, color: 'var(--ink)', display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none', transition: 'color .2s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink)')}
+                >
+                  /resume.pdf {extIcon}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      </AnimatedSection>
+
+      <style>{`
+        #contact ul { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+        #contact li { list-style: none !important; list-style-type: none !important; }
+        #contact li::before, #contact li::marker { display: none !important; content: none !important; }
+        @media (max-width: 640px) {
+          .contact-mailto { word-break: break-all !important; }
+        }
+        @media (max-width: 900px) {
+          .contact-grid { grid-template-columns: 1fr 1fr !important; }
+          .contact-grid > div:first-child { display: none; }
+          .section-head { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </section>
   )
 }

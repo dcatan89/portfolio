@@ -7,6 +7,8 @@ export interface Project {
   links: { live?: string; github?: string }
   featured: boolean
   image?: string
+  year: string
+  category: string
   problem: string
   role: string
   keyDecisions: string
@@ -24,6 +26,8 @@ export const projects: Project[] = [
     links: { live: undefined, github: undefined },
     featured: true,
     image: '/carrot-cake-demo.gif',
+    year: '2025 → now',
+    category: 'Household Assistant',
     problem:
       'My girlfriend and I needed a centralized way to manage our household — shared grocery lists, budget tracking, date night ideas, chore assignments, health reminders, and more. Existing apps meant juggling 10+ separate tools with no single source of truth. I wanted one place where we could manage everything through natural conversation and quick commands.',
     role: 'Solo developer. Designed the architecture, built every feature module, wrote the AI integration layer, and operate it daily as a real product for a two-person household.',
@@ -34,30 +38,59 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    slug: 'TODO-real-slug-2',
-    title: 'TODO — Real Project Name',
-    description:
-      'A developer tool or consumer product with a clear job to be done. Placeholder: swap in your actual one-liner description before Phase 2.',
-    techStack: ['React', 'TypeScript', 'Node.js', 'Prisma'],
-    links: { live: undefined, github: undefined },
+    slug: 'ledger',
+    title: 'Ledger',
+    description: 'A personal budget tracker built with Next.js 15 Server Actions — clean transaction entry, category rules, and monthly summaries without the bloat of commercial apps.',
+    techStack: ['Next.js 15', 'TypeScript', 'PostgreSQL', 'Server Actions', 'Tailwind CSS'],
+    links: { github: undefined, live: undefined },
     featured: true,
-    problem:
-      'Placeholder: what problem did this project solve? Who had the problem, and why did existing solutions fall short?',
-    role: 'Placeholder: what was your role? Did you design it, build it solo, lead a team, own a specific layer?',
-    keyDecisions:
-      'Placeholder: what were the 2–3 most consequential technical or product decisions? What tradeoffs did you navigate?',
-    outcome:
-      'Placeholder: what happened when it shipped? Metrics, user reactions, lessons learned, or what you would do differently.',
+    year: '2026',
+    category: 'Budget Tracker',
+    problem: 'Every budgeting app either costs money, sells your data, or buries the actual numbers under gamification. I wanted a tool that showed me exactly where money went, nothing more.',
+    role: 'Full-stack — database schema, Server Actions for mutations, Tailwind UI, category rule engine.',
+    keyDecisions: 'Server Actions for all mutations made the forms feel instant without client-side state management. Category rules stored as JSON allow flexible matching logic without a full DSL. PostgreSQL for the relational structure that budgets actually need.',
+    outcome: 'In progress. Transaction entry and monthly summaries are working. Category rules engine is the current build focus.',
   },
   {
     id: '3',
-    slug: 'project-3',
-    title: 'TODO — Non-Featured Project',
-    description:
-      'A side project, experiment, or open-source contribution worth showing. Placeholder: swap in your actual description before Phase 2.',
-    techStack: ['TypeScript', 'Tailwind CSS'],
-    links: { live: undefined, github: undefined },
+    slug: 'hours',
+    title: 'Hours',
+    description: 'A terminal-native time-tracking CLI — start/stop timers, tag work sessions, and export weekly reports, all without leaving the terminal.',
+    techStack: ['TypeScript', 'SQLite', 'Ink'],
+    links: { github: undefined, live: undefined },
     featured: false,
+    year: '2024',
+    category: 'Time-tracking CLI',
+    problem: '',
+    role: '',
+    keyDecisions: '',
+    outcome: '',
+  },
+  {
+    id: '4',
+    slug: 'atlas',
+    title: 'Atlas',
+    description: 'A home network dashboard — live device map, bandwidth monitoring, and alert rules, served from a Raspberry Pi.',
+    techStack: ['Go', 'HTMX', 'SQLite'],
+    links: { github: undefined, live: undefined },
+    featured: false,
+    year: '2023',
+    category: 'Home network dashboard',
+    problem: '',
+    role: '',
+    keyDecisions: '',
+    outcome: '',
+  },
+  {
+    id: '5',
+    slug: 'pantry',
+    title: 'Pantry',
+    description: 'A meal-planning engine — input what\'s in your fridge, get a week of recipes with a consolidated shopping list.',
+    techStack: ['Python', 'FastAPI', 'Prisma'],
+    links: { github: undefined, live: undefined },
+    featured: false,
+    year: '2023',
+    category: 'Meal-planning engine',
     problem: '',
     role: '',
     keyDecisions: '',

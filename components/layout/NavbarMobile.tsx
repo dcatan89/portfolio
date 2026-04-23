@@ -1,31 +1,45 @@
 'use client'
-
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
-export function NavbarMobile({ links }: { links: { label: string; href: string }[] }) {
+export function NavbarMobile({ links }: { links: { label: string; href: string; idx: string }[] }) {
   const [open, setOpen] = useState(false)
 
   return (
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="rounded-md p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 md:hidden"
+        className="md:hidden"
+        style={{ padding: 8, color: 'var(--ink)', background: 'none', border: 'none', cursor: 'pointer' }}
         aria-label="Toggle menu"
         aria-expanded={open}
       >
-        {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {open ? <X size={18} /> : <Menu size={18} />}
       </button>
+
       {open && (
-        <div className="absolute left-0 top-16 z-40 w-full border-b bg-background px-6 py-4 md:hidden">
-          <nav className="flex flex-col gap-4">
+        <div
+          className="md:hidden"
+          style={{
+            position: 'absolute', top: 56, left: 0, right: 0, zIndex: 40,
+            background: 'var(--bg)',
+            borderBottom: '1px solid var(--rule-faint)',
+            padding: '20px 40px',
+          }}
+        >
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-sm text-sm font-medium text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                style={{
+                  fontFamily: 'var(--font-jetbrains-mono)',
+                  fontSize: 14, color: 'var(--ink)',
+                  textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10,
+                }}
               >
+                <span style={{ color: 'var(--faint)', fontSize: 11 }}>{link.idx}</span>
                 {link.label}
               </a>
             ))}
